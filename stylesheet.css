@@ -1,0 +1,140 @@
+@media screen and (max-width: 600px) {
+    form {
+      width: 100%;
+    }
+    .input {
+      width: 100%;
+    }
+  }
+
+body {
+  background-color: rgba(204, 200, 200, 0.84);
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  position: relative;
+}
+
+.logo {
+  height: 110px;
+  width: 110px;
+  filter: brightness(0) invert(1);
+}
+
+.text-class {
+  font-size: 30px;
+  margin-left: 10px; /* Add some margin between the logo and the text */
+  color: white; /* Specify color of text to be white */
+}
+
+.Website_Name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art {
+  width: 100%;
+  height: auto;
+}
+
+.internal_box {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+}
+
+.left_banner {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.right {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 60vw;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: white;
+  padding: 20px 0vw;
+}
+
+label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+.form-title {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 40px;
+}
+
+.quote_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  max-width: 900px;
+  font-size: 30px;
+  gap: 40px;
+  padding-left: 3vw;
+}
+
+button {
+  display: flex;
+  background-color: rgb(217, 203, 73);
+  color: black;
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 10px 40px;
+  margin: 40px;
+}
+
+button:hover {
+  background-color: darkgoldenrod;
+  color: black;
+}
+
+.bottom_account_prompt {
+  padding-left: 40px;
+}
+
+.input{
+    width: 33.3%
+}
+
+.error {
+    border: 20px solid red;
+  }
