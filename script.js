@@ -1,15 +1,26 @@
-const passwordInput = document.getElementById("pwd");
-const confirmPasswordInput = document.getElementById("confirmpwd");
-
-function checkPasswordMatch() {
-  if (passwordInput.value !== confirmPasswordInput.value) {
-    passwordInput.classList.add("error");
-    confirmPasswordInput.classList.add("error");
-  } else {
-    passwordInput.classList.remove("error");
-    confirmPasswordInput.classList.remove("error");
-  }
+window.onload = function() {
+    var form = document.getElementById("myform");
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        checkPassword();
+    });
 }
 
-passwordInput.addEventListener("input", checkPasswordMatch);
-confirmPasswordInput.addEventListener("input", checkPasswordMatch);
+function checkPassword() {
+    var password = document.getElementById("pwd").value;
+    var confirmpassword = document.getElementById("confirmpwd").value;
+    if (password !== confirmpassword) {
+        //I can add the error class to the input element?
+        document.getElementById("pwd").classList.add("error");
+        document.getElementById("confirmpwd").classList.add("error");
+        //Display error message
+        document.getElementById("password-error").style.display = "block";
+        document.getElementById("password-error").innerHTML = "Passwords do not match";
+    } else {
+        //Clean up and remove the error class from the input element
+        document.getElementById("pwd").classList.remove("error");
+        document.getElementById("confirmpwd").classList.remove("error");
+        //Hide the error message
+        document.getElementById("password-error").style.display = "none";
+    }
+}

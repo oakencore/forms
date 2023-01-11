@@ -35,8 +35,8 @@ body {
 
 .text-class {
   font-size: 30px;
-  margin-left: 10px; /* Add some margin between the logo and the text */
-  color: white; /* Specify color of text to be white */
+  margin-left: 10px;
+  color: white;
 }
 
 .Website_Name {
@@ -111,7 +111,6 @@ label {
 }
 
 button {
-  display: flex;
   background-color: rgb(217, 203, 73);
   color: black;
   font-weight: 700;
@@ -135,6 +134,10 @@ button:hover {
     width: 33.3%
 }
 
-.error {
-    border: 20px solid red;
+.input input.error {
+    border: 2px solid red;
+  }
+
+  input:focus {
+    border: 5px solid yellow;
   }

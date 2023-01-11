@@ -39,7 +39,7 @@
             </div>
 
             <div>
-                <form>
+                <form id="myform">
                     <p class="form-title">Lets do this!</p>
                     <div class="input">
                         <label for="fname">First Name:
@@ -58,30 +58,29 @@
                     </div>
                     <div class="input">
                         <label for="phone">Phone Number:
-                            <input type="tel" id="phone" name="phone" required />
+                            <input type="text" id="phone" name="phone" minlength="9" maxlength="9" required />
                         </label>
                     </div>
                     <div class="input">
                         <label for="pwd">Password:
-                            <input type="password" id="pwd" name="pwd" required />
+                            <input type="password" id="pwd" name="password" required />
                         </label>
                     </div>
                     <div class="input">
                         <label for="pwd">Confirm Password:
-                            <input type="password" id="confirmpwd" name="confirmpwd" required />
+                            <input type="password" id="confirmpwd" name="confirmpassword" required />
                         </label>
                     </div>
+                    <div id="password-error" class="error-message"></div>
                 </form>
-
-            </div>
-            <div class="buttons">
-                <button>Create Account</button>
-            </div>
-            <div class="bottom_account_prompt">
-                <div>Already have an account? <a href="#">Log in</a></div>
+                <div class="buttons">
+                    <button type="submit" value="submit">Create Account</button>
+                </div>
+                <div class="bottom_account_prompt">
+                    <div>Already have an account? <a href="#">Log in</a></div>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
